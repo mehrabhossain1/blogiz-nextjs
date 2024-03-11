@@ -10,6 +10,8 @@ interface BlogId {
 export const generateStaticParams = async () => {
   const res = await fetch("http://localhost:5000/blogs");
   const blogs = await res.json();
+  console.log("blogs static", blogs);
+
   return blogs.slice(0, 3).map((blog: Blog) => ({
     blogId: blog.id,
   }));
