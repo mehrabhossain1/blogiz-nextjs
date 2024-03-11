@@ -10,7 +10,7 @@ const AllBlogsPage = async () => {
     cache: "no-store",
   });
   const blogs = await res.json();
-  //   console.log(blogs);
+  console.log("blogs main", blogs);
 
   return (
     <div>

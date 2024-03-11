@@ -6,7 +6,7 @@ import { FaCalendar } from "react-icons/fa";
 
 const BlogCard = ({ blog }: { blog: Blog }) => {
   return (
-    <div className="card w-full bg-base-100 shadow-xl">
+    <div className="card w-full bg-base-100 shadow-lg">
       <figure>
         <Image
           src={blog.blog_image}
