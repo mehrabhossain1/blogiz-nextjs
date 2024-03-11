@@ -15,6 +15,7 @@ const AllBlogsPage = () => {
   // const blogs = await res.json();
   // console.log("blogs main", blogs);
 
+  //
   const { data: blogs, isLoading, isError, error } = useGetBlogsQuery("");
   console.log(blogs);
 
