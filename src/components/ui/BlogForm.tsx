@@ -24,10 +24,12 @@ const CreateBlogForm = () => {
     const res = await fetch("http://localhost:5000/blogs");
     const blogs = await res.json();
 
+    // STEP1 -> 2 IN createBlogs.ts
     data.id = JSON.stringify(blogs.length + 1);
     data.total_likes = "1000";
     console.log(data);
 
+    // step-3
     try {
       const res = await createBlog(data);
       console.log(res);
